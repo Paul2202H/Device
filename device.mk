@@ -86,10 +86,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.build.date.utc=0 \
     ro.vendor.build.security_patch=2099-12-31
 
-# OEM otacerts
-PRODUCT_EXTRA_RECOVERY_KEYS += \
-    $(LOCAL_PATH)/security/infinix
-
 
 # MTK plpath utils
 PRODUCT_PACKAGES += \
