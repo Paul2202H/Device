@@ -6,6 +6,19 @@
 
 DEVICE_PATH := device/infinix/X6820
 
+
+# A/B
+AB_OTA_UPDATER := true
+AB_OTA_PARTITIONS += \
+    system \
+    vendor \
+    product \
+    system_ext \
+    boot \
+    vendor_boot \
+    vbmeta_vendor \
+    vbmeta_system
+
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
 BUILD_BROKEN_DUP_RULES := true
