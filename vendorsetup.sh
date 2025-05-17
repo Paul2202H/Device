@@ -67,8 +67,6 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export OF_TORCH_MAX_BRIGHTNESS= 1
 
         # maintainer 
-        export OF_MAINTAINER_AVATAR="$(gettop)/device/infinix/X6820/maintainer_avatar.png"
-        cp "${OF_MAINTAINER_AVATAR}" "$(gettop)/bootable/recovery/gui/theme/portrait_hdpi/images/Default/About/maintainer.png"
         export OF_MAINTAINER="Vale"
         export FOX_VARIANT="Stable_A12+"
  
