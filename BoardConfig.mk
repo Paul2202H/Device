@@ -6,22 +6,18 @@
 
 DEVICE_PATH := device/infinix/X6820
 
-
-# A/B
 AB_OTA_UPDATER := true
 AB_OTA_PARTITIONS += \
     system \
-    vendor \
-    product \
-    system_ext \
     boot \
-    vendor_boot \
     vbmeta_vendor \
-    vbmeta_system
+    vbmeta_system \
+    system_ext \
+    vendor \
+    product
+BOARD_USES_RECOVERY_AS_BOOT := true
 
-# For building with minimal manifest
-ALLOW_MISSING_DEPENDENCIES := true
-BUILD_BROKEN_DUP_RULES := true
+# Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
 TARGET_CPU_ABI := arm64-v8a
@@ -37,12 +33,11 @@ TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a55
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := X6820,FULL-64
+TARGET_OTA_ASSERT_DEVICE := X6820
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := CY-X6820-H773
+TARGET_BOOTLOADER_BOARD_NAME := Infinix-X6820
 TARGET_NO_BOOTLOADER := true
-
 
 # Platform
 TARGET_BOARD_PLATFORM := mt6877
