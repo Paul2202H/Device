@@ -69,8 +69,8 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
         # maintainer 
         export OF_MAINTAINER_AVATAR="$(gettop)/device/infinix/X6820/maintainer_avatar.png"
         cp "${OF_MAINTAINER_AVATAR}" "$(gettop)/bootable/recovery/gui/theme/portrait_hdpi/images/Default/About/maintainer.png"
-        export OF_MAINTAINER="TegarXLu"
-        export FOX_VARIANT="Stable_A13+"
+        export OF_MAINTAINER="Vale"
+        export FOX_VARIANT="Stable_A12+"
  
         # R11.3
 	export OF_PATCH_AVB20=1
